@@ -1,0 +1,300 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.1. 基本语法基本结构与 C 语言的相同之处：  变量、常量定义（宏定义、const） 运算符 分支（if、switch），循环（while、do-while、for） 数组 函数的声明与定义（在C语言基础上，增加了函数重载和默认值等特性）。  123456789#include &lt;iostream&gt;			&#x2F;&#x2F; 引入库文件using namespace std;		&#x2F;&#x2F; 引入命名空">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://qaq-mdzz.github.io/note-public/2023/10/24/C++%E7%AC%94%E8%AE%B0.md/1.%20%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/1.1.%20%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.1. 基本语法基本结构与 C 语言的相同之处：  变量、常量定义（宏定义、const） 运算符 分支（if、switch），循环（while、do-while、for） 数组 函数的声明与定义（在C语言基础上，增加了函数重载和默认值等特性）。  123456789#include &lt;iostream&gt;			&#x2F;&#x2F; 引入库文件using namespace std;		&#x2F;&#x2F; 引入命名空">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-10-24T13:25:26.061Z">
+<meta property="article:modified_time" content="2023-10-24T13:25:04.000Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/note-public/img/favicon.png"><link rel="canonical" href="https://qaq-mdzz.github.io/note-public/2023/10/24/C++%E7%AC%94%E8%AE%B0.md/1.%20%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/1.1.%20%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/note-public/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/note-public/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-10-24 21:25:04'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/note-public/archives/"><div class="headline">Articles</div><div class="length-num">11</div></a><a href="/note-public/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/note-public/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/note-public/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Untitled</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-10-24T13:25:26.061Z" title="Created 2023-10-24 21:25:26">2023-10-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-10-24T13:25:04.000Z" title="Updated 2023-10-24 21:25:04">2023-10-24</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-1-基本语法"><a href="#1-1-基本语法" class="headerlink" title="1.1. 基本语法"></a>1.1. 基本语法</h1><h1 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h1><p>与 C 语言的相同之处：</p>
+<ul>
+<li>变量、常量定义（宏定义、const）</li>
+<li>运算符</li>
+<li>分支（if、switch），循环（while、do-while、for）</li>
+<li>数组</li>
+<li>函数的声明与定义（在C语言基础上，增加了函数重载和默认值等特性）。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span>			<span class="comment">// 引入库文件</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;		<span class="comment">// 引入命名空间</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;hello world&quot;</span> &lt;&lt; endl;		<span class="comment">// 控制台输出</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h2><p><strong>引入命名空间：</strong></p>
+<ul>
+<li>cout 属于 std 命令空间，引入 std 命名空间后，就可以直接使用 cout 函数。</li>
+</ul>
+<p><strong>不引入命名空间：</strong></p>
+<ul>
+<li>使用 std::cout 调用 std 命名空间下的 cout 函数。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::cout &lt;&lt; <span class="string">&quot;hello&quot;</span> &lt;&lt; std::endl;</span><br></pre></td></tr></table></figure>
+
+<p><strong>引入部分成员：</strong></p>
+<ul>
+<li>可以减少命名空间的污染。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> std::cout;</span><br><span class="line"><span class="keyword">using</span> std::endl;</span><br></pre></td></tr></table></figure>
+
+<p><strong>命名空间的引入位置：</strong></p>
+<ul>
+<li>全局引入：在函数外部引入，可以在所有函数内使用。</li>
+<li>局部引入：只在当前函数中引入，其他函数不能使用。</li>
+</ul>
+<h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><p><strong>头文件（.h）：</strong></p>
+<ul>
+<li>包含函数的声明和常量的定义，告诉编译器有哪些函数。</li>
+<li>引入头文件：<code>#include &quot;*.h&quot;</code></li>
+</ul>
+<p><strong>源文件（.c &#x2F; .cpp）：</strong>负责函数的实现。<br><strong>库文件：</strong>编译后的二进制文件，也包含函数的实现，没有 main 方法，只能被调用。<br><strong>命名空间：</strong>用来解决不同库文件中函数同名的问题。</p>
+<h2 id="库文件"><a href="#库文件" class="headerlink" title="库文件"></a>库文件</h2><ul>
+<li>cmath：数学相关</li>
+</ul>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p><strong>修饰符：</strong></p>
+<ul>
+<li>unsigned：无符号型，置于数据类型之前。。</li>
+<li>const：常量，置于数据类型之前。</li>
+</ul>
+<p>注意：与 C 语言不同，C++ 的局部变量有默认值。不初始化，默认为 0。<br>命名规范：变量命名使用小驼峰。</p>
+<h2 id="auto-关键字"><a href="#auto-关键字" class="headerlink" title="auto 关键字"></a>auto 关键字</h2><p>作用：</p>
+<ul>
+<li>auto 关键字可以根据赋值，自动推断类型。</li>
+</ul>
+<p>注意：</p>
+<ul>
+<li>使用 auto 必须初始化，不然无法推测类型。</li>
+<li>auto 变量的类型，在编译时就已经确定，无法再更改类型。</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">auto</span> 变量名 = 值;</span><br></pre></td></tr></table></figure>
+
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><blockquote>
+<p>查看占用空间：<code>sizeof(数据类型)</code>、<code>sizeof(变量)</code></p>
+</blockquote>
+<p>C++ 的数据类型：<br><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/8421281/1685686876703-4db949d7-1008-4fdf-b252-514ebebe64fe.jpeg"><br><strong>关于 long 类型：</strong></p>
+<ul>
+<li>windows 上占 4 字节。</li>
+<li>Linux 32 位占 4 字节，Linux 64 位占 8 字节。</li>
+</ul>
+<p><strong>关于布尔型：</strong></p>
+<ul>
+<li>bool 的值为：true、false。打印结果为：1，0。</li>
+</ul>
+<p><strong>定义字符串：</strong></p>
+<ul>
+<li>C 语言风格：</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> 数组名[] = <span class="string">&quot;字符串&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>C++ 风格：</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line">string 变量名 = <span class="string">&quot;字符串&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><p>强制类型转换（与 C 语言相同）：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(数据类型)值</span><br></pre></td></tr></table></figure>
+
+<p>C++ 特性：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span>(值)</span><br></pre></td></tr></table></figure>
+
+<p>数值转字符串：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">to_string</span>(值)</span><br></pre></td></tr></table></figure>
+
+<p>字符串转 int：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">stoi</span>(str)</span><br></pre></td></tr></table></figure>
+
+<h1 id="输入和输出"><a href="#输入和输出" class="headerlink" title="输入和输出"></a>输入和输出</h1><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>cin 支持传入任意基本类型。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cin &gt;&gt; 变量;</span><br></pre></td></tr></table></figure>
+
+<p>输入给多个变量：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cin &gt;&gt; 变量<span class="number">1</span> &gt;&gt; 变量<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<p>cin 的缺点：只能接受一个单词，按空白字符分割。<br>使用 getline 可以输入完整的一行：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getline(<span class="built_in">cin</span>, 变量);</span><br></pre></td></tr></table></figure>
+
+<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p><strong>cout 的说明：</strong></p>
+<ul>
+<li>可以输出任意基本类型。</li>
+<li>默认不换行，由 endl 换行。</li>
+<li>使用 <code>&lt;&lt;</code> 可以拼接字符串，适用不同的类型。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;hello&quot;</span> &lt;&lt; <span class="number">250</span> &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+
+<p><strong>endl 的作用：</strong></p>
+<ul>
+<li>插入换行符并刷新输出流。</li>
+<li>刷新输出流：将缓冲区的数据写入输出设备，并将输出缓冲区清空。</li>
+</ul>
+<p>转为十六进制输出：<code>std::hex</code></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; hex &lt;&lt; num &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+
+<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h2 id="范围循环"><a href="#范围循环" class="headerlink" title="范围循环"></a>范围循环</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (数据类型 变量 : 容器) &#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用 auto 自动推测：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> 变量 : 容器) &#123; ... &#125;</span><br></pre></td></tr></table></figure>
+
+<p>循环变量引用：</p>
+<ul>
+<li>通过引用可以避免对元素进行值拷贝。</li>
+<li>通过引用可以在循环中修改元素内容。</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> &amp;变量 : 容器) &#123; ... &#125;</span><br></pre></td></tr></table></figure>
+
+<p>只读引用：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">const</span> <span class="keyword">auto</span> &amp;变量 : 容器) &#123; ... &#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>注意：和 C 语言一样，函数必须先声明，后使用。或者定义在 main 函数前。<br>定义函数的方式同 C 语言。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">返回类型 函数名(参数列表) &#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">return</span> 返回值;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>函数默认值：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">返回类型 函数名(数据类型 形参 = <span class="string">&quot;值&quot;</span>) &#123; ... &#125;</span><br></pre></td></tr></table></figure>
+
+<p>函数的重载：</p>
+<ul>
+<li>可以定义多个同名的函数，通过参数列表的不同进行区分，返回类型也可以不同。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">hello</span><span class="params">(string msg)</span> </span>&#123;</span><br><span class="line">	cout &lt;&lt; msg &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">hello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;hello&quot;</span> &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h1><p>与 C 语言不同，C++ 可以使用结构名作为类型，不用加 struct。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://qaq-mdzz.github.io/note-public">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://qaq-mdzz.github.io/note-public/2023/10/24/C++%E7%AC%94%E8%AE%B0.md/1.%20%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/1.1.%20%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">https://qaq-mdzz.github.io/note-public/2023/10/24/C++%E7%AC%94%E8%AE%B0.md/1.%20%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/1.1.%20%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/note-public/2023/10/24/C++%E7%AC%94%E8%AE%B0.md/1.%20%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/1.2.%20%E5%AD%97%E7%AC%A6%E4%B8%B2/" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/note-public/post/java-document-comments-javadoc-s-detailed-explanationcsdn-blog-bdrh6.html" title="Java文档注释用法+JavaDoc的使用详解-CSDN博客"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">Java文档注释用法+JavaDoc的使用详解-CSDN博客</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/note-public/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/note-public/archives/"><div class="headline">Articles</div><div class="length-num">11</div></a><a href="/note-public/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/note-public/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-1-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">1.1. 基本语法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">2.</span> <span class="toc-text">基本结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="toc-number">2.1.</span> <span class="toc-text">命名空间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84"><span class="toc-number">2.2.</span> <span class="toc-text">项目结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%93%E6%96%87%E4%BB%B6"><span class="toc-number">2.3.</span> <span class="toc-text">库文件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-number">3.</span> <span class="toc-text">变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#auto-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">3.1.</span> <span class="toc-text">auto 关键字</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-number">4.1.</span> <span class="toc-text">类型转换</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA"><span class="toc-number">5.</span> <span class="toc-text">输入和输出</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5"><span class="toc-number">5.1.</span> <span class="toc-text">输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%87%BA"><span class="toc-number">5.2.</span> <span class="toc-text">输出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF"><span class="toc-number">6.</span> <span class="toc-text">循环</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8C%83%E5%9B%B4%E5%BE%AA%E7%8E%AF"><span class="toc-number">6.1.</span> <span class="toc-text">范围循环</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">7.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">8.</span> <span class="toc-text">函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E4%BD%93"><span class="toc-number">9.</span> <span class="toc-text">结构体</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/note-public/2023/10/24/C++%E7%AC%94%E8%AE%B0.md/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="正则表达式">正则表达式</a><time datetime="2023-10-24T13:25:26.068Z" title="Created 2023-10-24 21:25:26">2023-10-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/note-public/2023/10/24/C++%E7%AC%94%E8%AE%B0.md/5.%20%E6%A8%A1%E6%9D%BF/" title="5. 模板">5. 模板</a><time datetime="2023-10-24T13:25:26.067Z" title="Created 2023-10-24 21:25:26">2023-10-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/note-public/2023/10/24/C++%E7%AC%94%E8%AE%B0.md/4.%20%E5%AE%B9%E5%99%A8/" title="4. 容器">4. 容器</a><time datetime="2023-10-24T13:25:26.066Z" title="Created 2023-10-24 21:25:26">2023-10-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/note-public/2023/10/24/C++%E7%AC%94%E8%AE%B0.md/3.%20%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="3. 面向对象">3. 面向对象</a><time datetime="2023-10-24T13:25:26.066Z" title="Created 2023-10-24 21:25:26">2023-10-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/note-public/2023/10/24/C++%E7%AC%94%E8%AE%B0.md/2.%20%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D/" title="2. 内存分配">2. 内存分配</a><time datetime="2023-10-24T13:25:26.065Z" title="Created 2023-10-24 21:25:26">2023-10-24</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/note-public/js/utils.js"></script><script src="/note-public/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
